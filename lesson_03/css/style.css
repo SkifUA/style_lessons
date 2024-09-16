@@ -1,0 +1,51 @@
+@import url("reset.css");
+
+img {
+  max-width: 1200px;
+  max-height: auto;
+}
+
+.substance ol li {
+  text-align: left;
+  list-style-type: decimal
+}
+
+.title__h1 {
+  text-align: center;
+  color: darkblue;
+}
+.pictuar__full-scrin {
+  max-height: 680px;
+  max-width: auto ;
+}
+.title__h2 {
+  color: brown;
+}
+.substance {
+  text-align: center;
+}
+.substance__content {
+  background-color: aqua;
+}
+.substance__item {
+  max-width: 1200px;
+}
+.chapter {
+  max-width: 1200px;
+}
+
+.chapter img {
+  max-width: 600px;
+  max-height: auto;
+}
+.title__h3 {
+  color: darkred;
+}
+.content {
+  color: darkslateblue;
+}
+
+.content strong {
+  color: blue;
+}
+
