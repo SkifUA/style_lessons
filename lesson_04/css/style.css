@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,600&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500);
+
+@import url('fonts.css');
+
+@import url("reset.css");
+
+
+.model1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.model1 .title {
+  font-weight: 500;
+  line-height: 66px;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.model1 .context p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.model2 {
+  font-family: "Work Sans", sans-serif;
+}
+
+.model2 .title {
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 38px;
+}
+
+.model2 .context p {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.model3 {
+  font-family: "DM Sans", sans-serif;
+}
+
+.model3 .title {
+  font-weight: 700;
+  line-height: 95px;
+  font-size: 88px;
+}
+
+.model3 .context p {
+  font-weight: 400;
+  line-height: 42px;
+  font-size: 24px;
+}
+
+
