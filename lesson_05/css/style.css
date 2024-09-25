@@ -2,186 +2,191 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:regular,500');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
 
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 80px;
+}
 
+/* model 1 */
 
 .model1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  width: 1440px;
-  height: 909px;
-  padding-block-start: 160px;
-  padding-block-end: 120px;
-  padding-inline-end: 755px;
-  padding-inline-start: 165px;
-
-
-  .title {
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 500;
-  }
-
-  .context {
-    margin-block-start: 16px;
-    height: 140px;
-    color:#091133;
-  }
-
-  .context p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-block-start: 8px;
-    color: #6F7CB2;
-  }
-
-  .items-block {
-    margin-block-start: 71px;
-    margin-inline-start: -5px;
-    margin-inline-end: -5px;
-    font-size: 0;
-  }
-
-  .item {
-    display: inline-block;
-    width: 50%;
-    padding-inline-start: 5px;
-    padding-inline-end: 5px;
-    color: #5D6970;
-  }
-
-  .item .item-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    margin-block-end: 7px;
-    color:#091133;
-  }
-
-  .item .item-context {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    margin-block-end: 32px;
-  }
-
-  .item img {
-    margin-block-start: 0;
-    margin-block-end: 14px;
-  }
-
+  max-width: 520px;
+  margin-inline: auto;
 }
 
 
+.model1 .title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  margin-block-end: 16px;
+}
+
+.model1 .context {
+    color:#091133;
+    padding-block-start: 8px;
+    margin-block-end: 71px;
+  }
+
+.model1 .context p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-block-end: 8px;
+  color: #6F7CB2;
+}
+
+.model1 .items-block {
+  margin-inline: -5px;
+  font-size: 0;
+}
+
+.model1 .item {
+  display: inline-block;
+  max-width: 50%;
+  padding-inline: 5px;
+  color: #5D6970;
+}
+
+.model1 .item .item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin-block-end: 7px;
+  color:#091133;
+}
+
+.model1 .item .item-context {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-block-end: 32px;
+}
+
+.model1 .item img {
+  margin-block-end: 14px;
+}
+
+/* model 2 */
+
 .model2 {
+  
   font-family: "Manrope", sans-serif;
   font-style: normal;
   line-height: 150%;
   background-color: black;
-  width: 1597px;
-  height: 801px;
+  max-inline-size: 1597px;
   margin-block: 150px;
-  margin-inline: 162px;
+  margin-inline: auto;
   color: #FFF;
-
-  .title {
-    font-weight: 700;
-    font-size: 38px;
-  }
-
-  .context {
-    width: 1297px;
-    margin-block-start: 14px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 18px;
-  }
-
-  .items-block {
-    margin-block-start: 80px;
-    font-size: 0;
-    margin-inline: -15px;
-  }
-
-  .items-block img {
-    margin-inline-end: 16px;
-  }
-
-  .item {
-    display: inline-block;
-    width: 31.3%;
-    padding-inline: 50px;
-    padding-block: 50px;
-    background-color: #0F0F0F;
-    margin-block-end: 30px;
-    margin-inline: 15px;
-  }
-
-  .item p {
-    margin-block-start: 30px;
-    color: #999;
-  }
-
-  .item-title {
-    vertical-align: middle;
-    font-size: 24px;
-    font-weight: 600;
-  }
-
+  
 }
+
+.model2 .title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 57px;
+  margin-block-end: 14px;
+}
+
+.model2 .context {
+  max-width: 1297px;
+  margin-block-end: 80px;
+}
+
+.model2 p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.model2 .items-block {
+  font-size: 0;
+  margin-inline: -15px;
+}
+
+.model2 .item {
+  display: inline-block;
+  max-width: 31.33%;
+  margin-block-end: 30px;
+  margin-inline: 15px;
+  vertical-align: top;
+}
+
+.model2 .item-content {
+  min-block-size: 284px;
+  padding-block: 50px;
+  padding-inline: 50px;
+  background-color: #0F0F0F;
+  border: 1px solid #262626;
+}
+
+.model2 .item-title-block {
+  margin-block-end: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  height: 1.5rem;
+}
+
+.model2 .item-title-block img {
+  vertical-align: middle;
+}
+.model2 .item p {
+  color: #999;
+}
+
+.model2 .item-title {
+  display: inline-block;
+  margin-inline-start: 16px;
+}
+
+/* model 3 */
 
 .model3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  width: 539px;
-  margin-block-start: 303px;
-  margin-inline-start: 163px;
-
-  .title {
-    font-size: 50px;
-    line-height: 66px;
-    font-weight: 500;
-  }
-
-  .context {
-    margin-block-start: 20px;
-    color:#091133;
-  }
-
-  .context p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-block-start: 12px;
-    color: #505F98;
-  }
-
-  .button-block {
-    margin-block-start: 74px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-
-    .button {
-      display: inline-block;
-      background-color: #293564;
-      color: #FFF;
-      width: 189px;
-      height: 36px;
-      margin-inline-end: 65px;
-      text-align: center;
-      padding-block: 5px;
-    }
-
-  }
+  max-width: 539px;
+  margin-inline: auto;
 }
 
+.model3 .title {
+  font-size: 50px;
+  line-height: 66px;
+  font-weight: 500;
+  margin-block-end: 20px;
+}
 
+.model3 .context {
+  padding-block-start: 12px;
+  color:#091133;
+  margin-block-end: 74px;
+}
 
+.model3 .context p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #505F98;
+  margin-block-end: 12px;
+}
 
+.model3 .button-block {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
 
-
+.model3 .button-block .button {
+  display: inline-block;
+  background-color: #293564;
+  color: #FFF;
+  margin-inline-end: 65px;
+  text-align: center;
+  padding-block: 5px;
+  min-inline-size: 190px;
+}
