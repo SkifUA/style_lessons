@@ -1,0 +1,219 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,800;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+.header-container {
+  margin-inline: 50px;
+  margin-block-end: 50px;
+  padding-block-start: 50px;
+}
+
+.header-container h1 {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.model1 {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+.model1 .container {
+  background-color: #FDF0E9;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 135px;
+  margin-block-end: 200px;
+}
+
+.model1 .head-text {
+  color: #EF6D58;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  margin-block-end: 20px;
+}
+
+.model1 .title {
+  margin-block-end: 26px;
+}
+
+.model1 h2 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #391400;
+}
+
+.model1 .text {
+  margin-inline: 0;
+  margin-block-end: 24px;
+  min-width: 470px;
+}
+
+.model1 .text p {
+  margin-inline: 0;
+  color: #391400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+
+.model1 .item {
+  background: url('../img/item.svg') 0 0 / 32px no-repeat;
+  padding-inline-start: 33px;
+  color: rgba(57, 20, 0, 0.64);
+  font-size: 16px;
+  line-height: 32px;
+  margin-block-end: 18px;
+}
+
+.model1 .item p {
+  display: inline;
+  margin-inline-start: 16px;
+}
+
+
+.model1 .context-container {
+  max-width: 470px;
+  margin-inline-start: 135px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.model1 .img-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-inline-start: 171px;
+}
+
+.model2 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.model2 .container {
+  min-width: auto;
+  background: linear-gradient(0deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 100%),
+    linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 100%),
+    url(../img/film-background.png) 0 0 / cover no-repeat;
+}
+
+.model2-header {
+  padding-block: 30px;
+  padding-inline: 162px;
+}
+
+.model2-header .icons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-inline-end: 300px;
+}
+
+.model2-header img {
+  vertical-align: middle;
+}
+
+.model2-header .toolbar {
+  font-size: 18px;
+  color: #BFBFBF;
+  font-weight: 400;
+  padding-inline: 10px, 40px;
+  padding-block: 10px;
+  padding-inline-end: 330px;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toolbar .active {
+  font-weight: 500;
+  color: #FFF;
+}
+
+.model2-header .toolbar li {
+  background-color: #0F0F0F;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-block: 10px;
+  margin-inline-end: 30px;
+}
+
+.model2-header .short {
+  padding-inline: 24px;
+}
+
+.model2-header .action-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.action-block img {
+  margin-inline-end: 30px;
+}
+
+.play-icon {
+  width: auto;
+  padding-inline: 725px;
+  padding-block-start: 90px;
+  margin-block-end: 131px;
+}
+
+.model2 .context-block h2{
+  color: #FFF;
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.model2 .context-block {
+  text-align: center;
+  padding-inline: 412px;
+}
+
+.model2 .context-block .title,
+.model2 .context-block .context {
+  max-width: 1096px;
+}
+
+.model2 .context-block .title {
+  margin-block-end: 24px;
+}
+
+.model2 .context-block .context {
+  margin-block-end: 50px;
+}
+
+.model2 .context-block .context p {
+  color: #999;
+  
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.player button.start {
+  color: #FFF;
+  border-radius: 8px;
+  background: #E50000 url(../img/play-m.icon.svg) 24px 18px / 28px no-repeat;
+  padding-block: 18px;
+  padding-inline-start: 52px;
+  padding-inline-end: 24px;
+  
+}
+
+
+
+
