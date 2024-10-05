@@ -7,10 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital@0;1&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap'); */
-
 
 .header-container {
   margin-inline: 50px;
@@ -26,7 +22,6 @@
 
 .model1 {
   font-family: "Epilogue", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   line-height: 32px;
 }
@@ -38,10 +33,6 @@
   padding-inline: 235px;
   margin-inline: auto;
   padding-block-end: 25px;
-}
-
-.model1 > .container > .img-block {
-  margin-block-end: 74px;
 }
 
 .model1 > .container > .context-block {
@@ -76,13 +67,15 @@
 
 .model1 ul > .item::before {
   content: "";
-  background: url(../img/ring-item.svg) 0 0 / auto no-repeat;
-  width: 24px;
-  height: 10px;
+  border-radius: 8px;
+  background-color: #EF6D58;
+  margin-inline-end: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 .model1 ul > .item:hover::before {
-  background: url(../img/ring-item-hover.svg) 0 0 / auto no-repeat;
+  background-color: #B90402;
 }
 
 .model1 ol {
@@ -134,22 +127,20 @@
 
 .model2 {
   font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
 .model2 > .container {
   padding-block-start: 127px;
   padding-inline-start: 42px;
-  padding-inline-end: 106px;
+  padding-inline-end: 42px;
   padding-block-end: 106px;
   margin-inline: auto;
-  max-width: 630px;
+  width: 630px;
 }
 
 .model2 .container > .content {
   margin-block-end: 75px;
-  min-width: 630px;
 }
 
 .model2 .content-date {
@@ -212,7 +203,6 @@ h3.rocket::after {
 
 .model3 {
   font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   
 }
@@ -239,6 +229,7 @@ h3.rocket::after {
   margin-block: auto;
   padding-block: 45px;
 }
+
 
 .model3 .price-block:hover {
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -274,7 +265,7 @@ h3.rocket::after {
   padding-inline: 13px  ;
 }
 
-.model3 .content .item {
+.model3 .content .item:not(:last-child) {
   margin-block-end: 26px;
 }
 
