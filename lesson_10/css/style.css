@@ -3,16 +3,22 @@
 @import url("reset.css");
 
 body {
+	margin: 0;
+	padding: 0;
 	font-family: "Epilogue", sans-serif;
   font-style: normal;
 }
 
 
 .header {
-  padding-block-start: 50px;
+	position: fixed;
+	top: 0px;
+	background-color: #FFF;
+  padding-block-end: 20px;
+	padding: 25px;
   color: #391400;
-	margin-block-end: 50px;
-	z-index: 1;
+	width: 100%;
+	z-index: 2;
 }
 
 .footer {
@@ -30,6 +36,31 @@ body {
 .container {
   max-width: 1440px;
   margin-inline: auto;
+	margin-block-start: 25px;
+	min-height: 900px; /*for example*/
+}
+
+.container__title {
+	top: 0;
+	position: sticky;
+	padding-block: 10px;
+	z-index: 1;
+}
+
+.container__title:first-child {
+	top: 100px
+}
+
+
+.container__title h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.container:first-child {
+	padding-block-start: 80px;
 }
 
 .first-model {
@@ -37,6 +68,7 @@ body {
 	background-color: #28293E;
 	max-width: 740px;
 	height: 740px;
+	margin-inline: auto;
 }
 
 .first-model__cotainer {
@@ -84,6 +116,8 @@ body {
 }
 
 .image__bacground {
+	position: absolute;
+	top: 88%;
 	width: 100%;
 	height: 100%;
 	border-start-start-radius: 246px;
@@ -144,10 +178,10 @@ body {
 
 .second-model {
 	background-color: #28293E;
-	margin-block-start: 25px;
 	margin-inline: auto;
 	padding-block: 20px;
 	max-width: 740px;
+	margin-inline: auto;
 }
 
 .second-model__content {
