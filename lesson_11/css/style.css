@@ -366,7 +366,7 @@ body {
 }
 
 .lighter--back {
-	left: -5;
+	left: -1px;
 	bottom: 55px;
 	transform: scale(-0.6, 0.6)
 }
