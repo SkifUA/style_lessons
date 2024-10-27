@@ -40,22 +40,19 @@ body {
 
 @keyframes object-move {
 	0% {
-		transform: scale(1);
-	}
-	50% {
-		top: 0;
-		left: 0;
-		transform: scale(1);
+		transform: scale(0.03);
+		top: -150px;
+		left: -250px;
 	}
 	70% {
-		left: 1700px;
-		bottom: 1200px;
-		transform: scale(0);
+		top: 120px;
+		left: 150px;
+		transform: scale(0.85);
 	}
-	100% {
-		top: 0;
-		left: 0;
-		transform: scale(1);
+	100%{
+		transform: scale(1.1);
+		top: 38%;
+		left: 1780px;
 	}
 }
 
@@ -83,23 +80,23 @@ body {
 }
 
 @keyframes rocket-flay {
-	0%{
-		scale: 1;
+	0% {
+		transform: scale(1);
 	}
 	50% {
 		top: 0;
 		left: 0;
-		scale: 1;
+		transform: scale(1);
 	}
 	70% {
 		left: 1700px;
 		bottom: 1200px;
-		scale: 0.01;
+		transform: scale(0);
 	}
 	100% {
 		top: 0;
 		left: 0;
-		scale: 1;
+		transform: scale(1);
 	}
 }
 
