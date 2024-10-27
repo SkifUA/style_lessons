@@ -82,17 +82,17 @@ body {
 	50% {
 		top: 0;
 		left: 0;
-		scale: 100%;
+		scale: 1;
 	}
 	70% {
 		left: 1700px;
 		bottom: 1200px;
-		scale: 0;
+		scale: 0.01;
 	}
 	100% {
 		top: 0;
 		left: 0;
-		scale: 100%;
+		scale: 1;
 	}
 }
 
