@@ -58,6 +58,8 @@ body {
 
 @keyframes misseile-ready {
 	0%{
+		bottom: 290px;
+		transform: rotate(-20deg)
 	}
 	30% {
 		bottom: 290px;
@@ -72,12 +74,14 @@ body {
 		transform: rotate(-20deg)
 	}
 	100% {
-		
+		bottom: 290px;
+		transform: rotate(-20deg)
 	}
 }
 
 @keyframes rocket-flay {
 	0%{
+		scale: 1;
 	}
 	50% {
 		top: 0;
