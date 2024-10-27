@@ -1,0 +1,381 @@
+
+@import url("reset.css");
+
+body {
+	max-width: 1700px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+
+.wrapper {
+	position: relative;
+	/* TODO Add background */
+	max-width: 1700px;
+	height: 940px;
+}
+
+.object-moving-place {
+	position: absolute;
+	bottom: 0;
+	height: 600px;
+	width: 800px;
+}
+
+@keyframes wheel-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(360deg)
+	}
+	70%{
+		transform: rotate(360deg)
+	}
+	100% {
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes object-move {
+	0% {
+		transform: scale(0.03);
+		top: -150px;
+		left: -250px;
+	}
+	70% {
+		top: 120px;
+		left: 150px;
+		transform: scale(0.85);
+	}
+	100%{
+		transform: scale(1.1);
+		top: 38%;
+		left: 1780px;
+	}
+}
+
+@keyframes misseile-ready {
+	0%{
+	}
+	30% {
+		bottom: 290px;
+		transform: rotate(-20deg)
+	}
+	50%{
+		bottom: 325px;
+		transform: rotate(-42deg)
+	}
+	70% {
+		bottom: 290px;
+		transform: rotate(-20deg)
+	}
+	100% {
+		
+	}
+}
+
+@keyframes rocket-flay {
+	0%{
+	}
+	50% {
+		top: 0;
+		left: 0;
+		scale: 100%;
+	}
+	70% {
+		left: 1700px;
+		bottom: 1200px;
+		scale: 0;
+	}
+	100% {
+		top: 0;
+		left: 0;
+		scale: 100%;
+	}
+}
+
+.missile__rocket {
+	position: absolute;
+	animation-name: rocket-flay;
+	
+	animation-delay: 10s;
+	animation-duration: 10s;
+	transition-timing-function: cubic-bezier(0.000, 1.540, 0.905, 0.600);
+	animation-iteration-count: infinite;
+	
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.object {
+	animation-name: object-move;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	position: relative;
+	width: 570px;
+	height: 450px;
+	transform: scale(0.03);
+	top: -150px;
+	left: -250px;
+}
+
+.wheel {
+	height: 100px;
+	width: 100px;
+	animation-name: wheel-rotate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+.wheel__outside {
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+	border: #391400 dashed 10px;
+}
+
+.wheel__circle {
+	height: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border: #391400 double 10px;
+}
+
+.wheel__disc {
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+	border: gray dashed 15px;
+}
+
+.wheel__inner-center {
+	background-color: gray;
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+}
+
+.track {
+	height: 105px;
+	width: 535px;
+}
+
+.content-wrapper-3d > .chassis:hover {
+	transform: rotateX(40deg);
+}
+
+.track__outside {
+	height: 100%;
+	width: 100%;
+	border: black dashed 12px;
+	border-radius: 105px;
+}
+
+.track__inside {
+	height: 100%;
+	width: 100%;
+	border: black solid 5px;
+	border-radius: 100px;
+}
+
+.chassis {
+	width: 570px;
+	height: 80px;
+}
+
+.chassis__base {
+	background-color: darkgreen;
+	width: 100%;
+	height: 100%;
+	border-start-start-radius: 50px;
+	border-start-end-radius: 50px;
+}
+
+.cabin {
+	width: 200px;
+	height: 200px;
+}
+
+.cabin__base {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: darkgreen;
+	border-start-end-radius: 180px;
+	border-start-start-radius: 40px;
+	border-end-end-radius: 10px;
+}
+
+.cabin__side-glass {
+	position: absolute;
+	height: 90px;
+	width: 100px;
+	background-color: gray;
+	border-start-end-radius: 240px;
+	top: 15%;
+	left: 35%;
+}
+
+.lighter {
+	position: relative;
+	height: 35px;
+	width: 10px;
+}
+
+.lighter__base {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	border-end-end-radius: 25px;
+}
+
+.lighter__visor {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	height: 10px;
+	width: 8px;
+	background-color: black;
+	border-start-end-radius: 2px;
+	border-end-end-radius: 25px;
+}
+
+.stanin {
+	position: relative;
+	height: 200px;
+	width: 200px;
+}
+
+.stanin__base {
+	background-color: darkgreen;
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.stanin__triangle {
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top: 0;
+	border-bottom: 120px solid darkgreen;
+	position: absolute;
+	bottom: 25%;
+}
+
+.stanin__hinge {
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	background-color: darkgray;
+	position: absolute;
+	top: 0;
+	left: 65px;
+}
+
+.missile {
+	position: relative;
+	height: 100px;
+	width: 500px;
+}
+
+.missile__base {
+	position: absolute;
+	background-color: darkgreen;
+	height: 100%;
+	width: 70%;
+	border-radius: 10px;
+}
+
+.missile__body {
+	position: absolute;
+	background-color: darkgray;
+	height: 70%;
+	width: 30%;
+	left: 50%;
+	bottom: 15%;
+	box-shadow: -62px -1px 60px -18px hsla(22, 69%, 47%, 0.79);
+}
+
+.missile__head {
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 35px solid transparent;
+	border-right: 0;
+	border-left: 100px solid lightgray;
+	left: 80%;
+	bottom: 15%;
+}
+
+
+
+
+/* OBJECT */
+
+
+.wheeles {
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+
+.wheeles > .wheel {
+	display: inline-block;
+}
+
+.object > .track {
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+}
+
+.object > .chassis {
+	position: absolute;
+	bottom: 45px;
+	left: 5px;
+}
+
+.object > .cabin {
+	position: absolute;
+	left: 58%;
+	bottom: 120px;
+}
+
+.object > .stanin {
+	position: absolute;
+	left: 18%;
+	bottom: 100px;
+}
+
+.object > .missile {
+	animation-name: misseile-ready;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	bottom: 290px;
+	left: 0;
+	transform: rotate(-20deg)
+}
+
+.object > .lighter {
+	position: absolute;
+}
+
+.lighter--front {
+	right: 30px;
+	bottom: 135px;
+}
+
+.lighter--back {
+	left: -1px;
+	bottom: 55px;
+	transform: scale(-0.6, 0.6)
+}
