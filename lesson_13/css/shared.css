@@ -1,0 +1,48 @@
+
+/*title*/
+.title-block {
+}
+.title-block__comments {
+    color: #ef6d58;
+    line-height: 2; /* 200% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.title-block__title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -1px;
+}
+.title-block__title:not(:last-child) {
+    margin-bottom: 36px;
+}
+
+/*button*/
+.button {
+    position: relative;
+    width: fit-content;
+    display: block;
+    padding: 18px 30px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.button--attention {
+    border: 1px solid #EF6D58;
+    background-color: #EF6D58;
+}
+
+.button--center {
+    margin: 0 auto;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
